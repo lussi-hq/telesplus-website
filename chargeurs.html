@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coques de Téléphone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+        }
+        .container {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .section-title {
+            color: #1d1d1f;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0071e3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #005bb5;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+        }
+        header {
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            max-width: 100px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: #1d1d1f;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        nav a:hover {
+            color: #0071e3;
+        }
+        .container {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-title {
+            color: #1d1d1f;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .product-category {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-category div {
+            background-color: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: calc(25% - 40px); /* 25% for 4 items per row */
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .product-category div:hover {
+            transform: scale(1.05);
+        }
+        .product-category img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+        }
+        .carousel-item {
+            min-width: 100%;
+            scroll-snap-align: start;
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+        }
+        .carousel-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #1d1d1f;
+            color: #f5f5f7;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #e5e5e5;
+        }
+        footer a {
+            color: #0071e3;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .footer-links div {
+            margin: 0 15px;
+        }
+        .social-media {
+            margin-bottom: 20px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .social-media img {
+            width: 24px;
+            height: 24px;
+        }
+        @media (max-width: 992px) {
+            .product-category div {
+                width: calc(33.33% - 40px); /* 3 items per row */
+            }
+        }
+        @media (max-width: 480px) {
+            .product-category div {
+                width: 100%; /* 1 item per row */
+            }
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-address {
+            margin-top: 20px;
+            text-align: center;
+            color: #f5f5f7;
+        }
+        @media (min-width: 768px) {
+            .footer-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .footer-address {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Logo de l'entreprise" class="logo">
+        <nav>
+        </nav>
+    </header>
+    
+<div class="container">
+    <h2 class="section-title">Coques de Téléphone</h2>
+    <img src="chargeurs.jpg" alt="Nos chargeurs" class="product-image">
+    <p>Protégez votre téléphone avec style grâce à nos coques de haute qualité.</p>
+    <a href="teles +.html" class="back-button">Retour à la page d'accueil</a>
+</div>
+<footer>
+    <div class="footer-content">
+        <div class="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook" title="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter" title="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram" title="Instagram"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" title="LinkedIn"></a>
+        </div>
+        <div class="footer-links">
+            <div><a href="#produits">Produits</a></div>
+            <div><a href="#infos">Infos</a></div>
+            <div><a href="#mission">Mission</a></div>
+            <div><a href="#equipe">Équipe</a></div>
+            <div><a href="mailto:contact@tonentreprise.com">Contact</a></div>
+        </div>
+        <div class="footer-address">
+            <p>Galerie 31 Local 13, Avenue Luambo Makiadi, Ex Bokasa,Rond point Kin Maziere, Kinshasa/Gombe</p>
+            <p>Téléphone: +243 999 696 854</p>
+            <p>Email: contact@tonentreprise.com</p>
+        </div>
+    </div>
+    <p>&copy; 2024 Distribution d'Accessoires de Téléphone. Tous droits réservés.</p>
+</footer>
+
+<script>
+    // Carousel script
+    const carousel = document.querySelector('.carousel');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    carousel.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+    });
+
+    carousel.addEventListener('mouseleave', () => {
+        isDown = false;
+    });
+
+    carousel.addEventListener('mouseup', () => {
+        isDown = false;
+    });
+
+    carousel.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - carousel.offsetLeft;
+        const walk = (x - startX) * 2; // scroll-fast
+        carousel.scrollLeft = scrollLeft - walk;
+    });
+
+    // Smooth scrolling for navigation
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - document.querySelector('header').offsetHeight,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Shrinking header on scroll
+    window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        if (window.scrollY > 100) {
+            header.classList.add('small');
+        } else {
+            header.classList.remove('small');
+        }
+    });
+</script>
+
+
+
+</body>
+</html>
